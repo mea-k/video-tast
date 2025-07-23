@@ -2,13 +2,28 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>めあの動画ページ</title>
+  <title>動画を見るだけ</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    video {
+      width: 90%;
+      max-width: 960px;
+      border: 2px solid white;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 <body>
-  <h1>動画リンク</h1>
-  <p>下のリンクを押すとYouTubeで動画が開きます。</p>
-  <a href="https://youtu.be/FGAS4e3nWUo?si=HjCCgk8Jiz7eCtfD" target="_blank" rel="noopener noreferrer">
-    YouTubeで動画を見る
-  </a>
+  <video controls autoplay muted playsinline>
+    <source src="video.mp4" type="video/mp4">
+    お使いのブラウザは video タグをサポートしていません。
+  </video>
 </body>
 </html>
